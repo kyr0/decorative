@@ -14,13 +14,7 @@ module.exports = function(grunt) {
                     loaders: [
                         {
                             test: /\.js$/,
-                            loader: "babel-loader",
-                            query: {
-                                stage: 1,
-                                optional: [
-                                    "es7.decorators"
-                                ]
-                            }
+                            loader: "babel-loader"
                         }
                     ]
                 },

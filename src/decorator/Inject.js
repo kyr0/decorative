@@ -7,8 +7,12 @@ import Decorator from '../Decorator';
  */
 export default class InjectDecorator extends Decorator {
 
-    value:Object = null;
-    instantiate:Boolean = true;
+    value = null;
+    instantiate = true;
+
+    constructor() {
+        super();
+    }
 
     newInstance() {
         return new InjectDecorator();

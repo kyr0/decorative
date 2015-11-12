@@ -6,8 +6,12 @@ import Decorator from '../Decorator';
  */
 export default class TranslateDecorator extends Decorator {
 
-    translations:Object = null;
-    locale:String = "en_GB";
+    translations = null;
+    locale = "en_GB";
+
+    constructor() {
+        super();
+    }
 
     newInstance() {
         return new TranslateDecorator();

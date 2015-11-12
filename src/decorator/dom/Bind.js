@@ -6,7 +6,11 @@ import Decorator from '../../Decorator';
  */
 export default class DOMBindDecorator extends Decorator {
 
-    selector:String = null;
+    selector = null;
+
+    constructor() {
+        super();
+    }
 
     newInstance() {
         return new DOMBindDecorator();

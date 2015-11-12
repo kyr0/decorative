@@ -27,9 +27,9 @@ export default class PromisedDecorator extends Decorator {
 
         var targetMethod = descriptor.value;
 
-        descriptor.value = function(config:Object) {
+        descriptor.value = function(config) {
 
-            return new Promise(function(resolve:Function, reject:Function) {
+            return new Promise(function(resolve, reject) {
                 targetMethod(config, resolve, reject);
             });
         };

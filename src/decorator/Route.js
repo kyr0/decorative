@@ -8,8 +8,12 @@ import Decorator from '../Decorator';
  */
 export default class RouteDecorator extends Decorator {
 
-    route:String = null;
-    authCb:Function = null;
+    route = null;
+    authCb = null;
+
+    constructor(){
+        super();
+    }
 
     newInstance() {
         return new RouteDecorator();

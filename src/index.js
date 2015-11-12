@@ -12,11 +12,11 @@ import Router from './Router';
 dec.Router = Router;
 
 // DECORATORS
-import StartAppDecorator from './decorator/StartApp';
-dec.StartAppDecorator = StartAppDecorator;
-var StartApp = new StartAppDecorator().getDecorator();
-if (!dec.StartApp) {
-    dec.StartApp = StartApp;
+import AppDecorator from './decorator/App';
+dec.AppDecorator = AppDecorator;
+var App = new AppDecorator().getDecorator();
+if (!dec.App) {
+    dec.App = App;
 }
 
 import AppModuleDecorator from './decorator/AppModule';
