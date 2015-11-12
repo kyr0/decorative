@@ -1,6 +1,6 @@
 {
   "name": "decorative",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "repository": "https://github.com/kyr0/decorative",
   "description": "decorative.js is an ES7 micro-framework promoting @decorator pattern-driven app development.",
   "main": "index.js",
