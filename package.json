@@ -1,6 +1,6 @@
 {
   "name": "decorative",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "repository": "https://github.com/kyr0/decorative",
   "description": "decorative.js is an ES7 micro-framework promoting @decorator pattern-driven app development.",
   "main": "index.js",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "babel-core": "^6.1.4",
     "babel-loader": "^6.1.0",
+    "babel-plugin-transform-decorators": "^6.1.4",
     "babel-plugin-syntax-class-properties": "^6.1.4",
     "babel-preset-es2015": "^6.1.4",
     "babel-preset-stage-0": "^6.1.2",

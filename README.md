@@ -87,13 +87,7 @@ So lets write a Grunt file and include webpack like this:
                     loaders: [
                         {
                             test: /\.js$/,
-                            loader: "babel-loader",
-                            query: {
-                                stage: 1, // <- important
-                                optional: [
-                                    "es7.decorators" // <- important
-                                ]
-                            }
+                            loader: "babel-loader"
                         }
                     ]
                 },
@@ -103,6 +97,16 @@ So lets write a Grunt file and include webpack like this:
             }
         }
     });
+
+Additionally create a ```.babelrc``` file in your projects root directory (next to Gruntfile.js)
+and put it like:
+
+    {
+      "presets": ["es2015", "stage-0"],
+      "plugins": ["transform-decorators", "syntax-class-properties"]
+    }
+    
+This configures Babel.js to parse/transform the full spectrum of ES6+ features.
 
 ## Decorators
 
