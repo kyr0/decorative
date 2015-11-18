@@ -98,6 +98,8 @@ So lets write a Grunt file and include webpack like this:
         }
     });
 
+A working example of a Gruntfile can be found in this repositories "Gruntfile.js".
+
 Additionally create a ```.babelrc``` file in your projects root directory (next to Gruntfile.js)
 and put it like:
 
@@ -107,6 +109,12 @@ and put it like:
     }
     
 This configures Babel.js to parse/transform the full spectrum of ES6+ features.
+
+Now that we set up Babel.js and grunt, we can run the transpiling process continuously:
+
+    grunt webpack
+    
+(Or just "grunt" when you set "webpack" as a default task)
 
 ## Decorators
 
@@ -275,7 +283,7 @@ Can be applied to methods in @AppModule decorated classes only yet. (see roadmap
 Wraps a decorated method inside a Promise.
 
     @Promised()
-    findMyPhone(howItLooksLike:Object, found:Function, imSureSomeoneHasStolenIt:Function) {
+    findMyPhone(howItLooksLike, foundCb, imSureSomeoneHasStolenItCb) {
  
         $.ajax({
             url: '/whereIsMyPhone',
